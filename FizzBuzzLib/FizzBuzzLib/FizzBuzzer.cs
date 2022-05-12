@@ -1,5 +1,4 @@
 ﻿using FizzBuzzLib;
-using System.Linq;
 
 namespace FizzBuzz
 {
@@ -35,11 +34,15 @@ namespace FizzBuzz
         {
             return await Task.Run(() =>
             {
-                foreach (var r in _config.WordNumberPairs?
-                                    .OrderByDescending(x => x.Value.Length)
-                                    .Where(r => r.Value.All(v => number % v == 0)))
+                var pairs = _config.WordNumberPairs;
+
+                if (pairs != null)
                 {
-                    return r.Key;
+                    foreach (var p in pairs.OrderByDescending(x => x.Value.Length)
+                                        .Where(r => r.Value.All(v => number % v == 0)))
+                    {
+                        return p.Key;
+                    }
                 }
 
                 return number.ToString();

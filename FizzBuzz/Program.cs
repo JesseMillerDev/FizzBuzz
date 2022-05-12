@@ -11,12 +11,7 @@ var fizzBuzzConfig = Configuration.GetSection("FizzBuzzConfig").Get<FizzBuzzConf
 
 var fizzBuzzer = new FizzBuzzer(fizzBuzzConfig);
 
-await foreach (var result in fizzBuzzer.GetFizzBuzz(-10, 10))
+await foreach (var result in fizzBuzzer.GetFizzBuzz(-100, 100))
 {
     Console.WriteLine(result);
 }
-
-Console.ReadLine();
-
-
- 
