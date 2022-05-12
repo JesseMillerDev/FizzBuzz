@@ -2,7 +2,6 @@ using FizzBuzz;
 using FizzBuzzLib;
 using Microsoft.Extensions.Configuration;
 using NUnit.Framework;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace FizzBuzzTests
