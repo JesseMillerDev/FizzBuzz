@@ -24,20 +24,20 @@ namespace FizzBuzzTests
         }
 
         [Test]
-        public async Task ShouldFizzBuss_15_ReturnsFizzBuzz()
+        public async Task ShouldFizzBuzz_15_ReturnsFizzBuzz()
         {
             var result = await _sut.ShouldFizzBuzz(15);
             Assert.AreEqual(result, "fizzbuzz");
         }
 
         [Test]
-        public async Task ShouldFizzBuss_5_ReturnsBuzz()
+        public async Task ShouldFizzBuzz_5_ReturnsBuzz()
         {
             var result = await _sut.ShouldFizzBuzz(5);
             Assert.AreEqual(result, "buzz");
         }
         [Test]
-        public async Task ShouldFizzBuss_3_ReturnsFizz()
+        public async Task ShouldFizzBuzz_3_ReturnsFizz()
         {
             var result = await _sut.ShouldFizzBuzz(3);
             Assert.AreEqual(result, "fizz");

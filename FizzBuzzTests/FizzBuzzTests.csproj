@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\FizzBuzzLib\FizzBuzzLib\FizzBuzzLib.csproj" />
+    <ProjectReference Include="..\FizzBuzzLib\FizzBuzzLib\FizzBuzzLib.csproj" />
   </ItemGroup>
 
   <ItemGroup>
